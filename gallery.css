@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.container2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 60px;
+    top: 0;
+    width: 100%;
+    max-width: 1200px;
+    background: cornsilk;
+    position: sticky;
+    z-index: 999;
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: absolute;
+    width: 100%;
+}
+#logo{
+    margin-top: 10px;
+}
+#logo a{
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #dc143c;
+    font-family: 'Square Peg', cursive;
+}
+#logo img{
+    height: 50px;
+    width: 60px;
+    border-radius: 50% ;
+}
+.nav2 .fa-bars{
+    display: none;
+}
+.nav2 .fa-times{
+    display: none;
+}
+.nav2 ul{
+    display: flex;
+    list-style: none;
+}
+.nav2 ul li{
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+}
+.nav2 ul li a{
+    color: #141414;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+.nav2 ul li a:hover{
+    color: #dc143c;
+}
+.nav2 ul li button{
+    display: none;
+}
+.nav2-icons{
+    display: flex;
+}
+.nav2-icons a .fa{
+    display: flex;
+    padding: 0 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    color: #141414;
+}
+.nav2-icons a .fa:hover{
+    color: #dc143c;
+    transition: all 0.5s;
+}
+.nav2-icons .fa-search{
+    cursor: pointer;
+}
+.nav2-icons .fa-search:hover{
+    color: #dc143c;
+}
+.nav2-icons p{
+    padding-left: 5px;
+}
+@media screen and (max-width: 1000px) {
+    #logo{
+        font-size: 1rem;
+    }
+    .nav2{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+    .nav2 ul{
+        display: grid;
+        grid-template-columns: auto;
+        background: black;
+        height: 80vh;
+        width: 100%;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        transition: all 1s ease-out;
+        top: -1000px;
+    }
+    .nav2 ul li a{
+        margin: 0 auto;
+        color: #dc143c;
+    }
+    
+    .nav2 ul li button{
+        display: block;
+        background: #ff000f;
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;
+        align-items: center;
+        border-radius: 10px;
+        border: none;
+    }
+    .nav2 ul li button a{
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+    .nav2 .fa-bars{
+        display: block;
+    }
+    .nav2 .fa-times{
+        display: block;
+        color: #ff000f;
+        text-align: center;
+        font-size: 22px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .nav2{
+        padding: 0;
+        margin: 0;
+        font-size: 1rem;
+    }
+    #logo p{
+        font-size: 1rem;
+    }
+}
+.search-box{
+    height: 30px;
+    width: 100%;
+    
+    display: flex;
+    text-align: right;
+}
+.search-box input{
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    margin-left: 40%;
+    border: none;
+}
+form{
+    display: flex;
+    width: 100%;
+    transition: 0.5s;
+    opacity: 0;
+}
+button{
+    border: transparent;
+    padding: 0 30px;
+    text-align: center;
+    background: #141414;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+button:hover{
+    background: #dc143c;
+    transition: 0.5s;
+}
+
+section{
+    background: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+input{
+    display: none;
+}
+section h2{
+    font-weight: bolder;
+    animation: blink 2s infinite ease ;
+}
+@keyframes blink {
+    0%{
+        background-color: #141414;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    100%{
+        background-color: #ff000f;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    background: rgb(238, 235, 235);
+    width: 80%;
+    height: 60px;
+    margin: 20px auto;
+    justify-content: center;
+    border-radius: 10px;
+}
+.gallery h3{
+    background: lightgray;
+    padding: 0 50px;
+    line-height: 60px;
+    position: relative;
+    margin: 30px 0;
+    height: 100%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+.gallery h3::after{
+    content: '';
+    width: 100% ;
+    height: 100%;
+
+}
+
+label{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 40px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1rem;
+    transition: all 0.5s;
+}
+
+label:hover{
+    color: #dc143c;
+}
+label.active{
+    color: #dc143c;
+}
+.gallery-images{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: auto;
+    grid-gap: 20px;
+}
+.gallery-images .pic{
+    height: 230px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.gallery-images .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightgray;
+    transition: transform 0.5s;
+}
+.gallery-images .pic:hover img{
+    transform: scale(1.1);
+}
+.pic::before{
+    content: 'AUDRA STORE';
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+    color: #dc143c;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.2s;
+    z-index: 2;
+    margin-top: -200px;
+    opacity: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+
+.pic:hover::before{
+    margin-top: 0;
+    opacity: 1;
+    border-radius: 10px;
+}
+#check1:checked ~ section .gallery-images .pic{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+#check2:checked ~ section .gallery-images .men{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+#check2:checked ~ section .gallery-images .women, 
+#check2:checked ~ section .gallery-images .watch,
+#check2:checked ~ section .gallery-images .shoes{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+#check3:checked ~ section .gallery-images .women{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+#check3:checked ~ section .gallery-images .men,
+#check3:checked ~ section .gallery-images .shoes,
+#check3:checked ~ section .gallery-images .watch{
+    opacity: 0;
+    transform:scale(0);
+    position: absolute;
+}
+#check4:checked ~ section .gallery-images .shoes{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+#check4:checked ~ section .gallery-images .men,
+#check4:checked ~ section .gallery-images .women,
+#check4:checked ~ section .gallery-images .watch{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+#check5:checked ~ section .gallery-images .watch{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+#check5:checked ~ section .gallery-images .men,
+#check5:checked ~ section .gallery-images .women,
+#check5:checked ~ section .gallery-images .shoes{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+@media screen and (max-width: 1020px) {
+    label{
+        padding: 0 10px;
+        font-size: 13px;
+    }
+    .gallery h3{
+        padding: 0 10px;
+        font-size: 13px;
+    }
+    .gallery{
+        width: 100%;
+    }
+    .pic::before{
+        font-size: 10px;
+        top: 98%;
+    }
+    .search-box input{
+        width: 100%;
+        margin-left: 30%;
+    }
+    button{
+        padding: 0 20px;
+        
+    }
+}
+
+
+
+
+
+
+

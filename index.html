@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="stylesheet" href="lightbox.min.css">
+
+</head>
+<body>
+    <div class="container2">
+        <div class="nav2">
+            <div id="logo">
+                <a href=""><img src="audra.jpg" alt=""></a>
+            </div>
+            <ul id="menulist">
+                <i class="fa fa-times" onclick="closeMenu()"></i>
+                <li><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">My Account</a></li>
+                <li><button><a href="">SIGN UP</a></button></li>
+            </ul>
+            <div class="nav2-icons">
+                <i class="fa fa-search" onclick="seeFunc()"></i>
+                <a href=""><i class="fa fa-heart-o"></i></a>
+                <a href=""><i class="fa fa-shopping-cart"></i></a>
+                <p>$0.00</p>
+            </div>
+            <i class="fa fa-bars" onclick="openMenu()"></i>
+        </div>
+    </div>
+    
+
+    <input type="radio" name="Photos" id="check1" checked>
+    <input type="radio" name="Photos" id="check2">
+    <input type="radio" name="Photos" id="check3">
+    <input type="radio" name="Photos" id="check4">
+    <input type="radio" name="Photos" id="check5">
+
+
+    <div class="search-box">
+        <form id="search">
+            <input type="text" placeholder="What are you looking for?">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <section>
+        <h2>GET 50% 0FF!!!</h2>
+        <h3>Choose from our varieties of collections designed specially for you.</h3>
+        <div class="gallery">
+            <h3>Categories</h3>
+            <label for="check1" class="title active"
+            >All</label>
+            <label for="check2" class="title">Men</label>
+            <label for="check3" class="title">Women</label>
+            <label for="check4" class="title">Shoes</label>
+            <label for="check5" class="title">Watches</label>
+        </div>
+        <div class="gallery-images">
+            <div class="pic men"><a href="men1.jpg" data-lightbox="fashion" data-title="Casual men jean jacket"><img src="men1.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women.jpg" data-lightbox="fashion" data-title="Corporate Gown"><img src="women.jpg" alt=""></a></div>
+            <div class="pic watch"><a href="watch1.jpg" data-lightbox="fashion" data-title=""><img src="watch1.jpg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes1.jpg" data-lightbox="fashion" data-title=""><img src="shoes1.jpg" alt=""></a></div>
+            <div class="pic men"><a href="men2.jpg" data-lightbox="fashion" data-title="n"><img src="men2.jpg" alt=""></a></div>
+            <div class="pic men"><a href="men3.jpg" data-lightbox="fashion" data-title=""><img src="men3.jpg" alt=""></a></div>
+            <div class="pic men"><a href="men5.jpg" data-lightbox="fashion" data-title=""><img src="men5.jpg" alt=""></a></div>
+            <div class="pic men"><a href="men4.jpg" data-lightbox="fashion" data-title=""><img src="men4.jpg" alt=""></a></div>
+            <div class="pic men"><a href="men6.jpg" data-lightbox="fashion" data-title=""><img src="men6.jpg" alt=""></a></div>
+            <div class="pic men"><a href="men7.jpg" data-lightbox="fashion" data-title=""><img src="men7.jpg" alt=""></a></div>
+            <div class="pic men"><a href="men8.jpg" data-lightbox="fashion" data-title=""><img src="men8.jpg" alt=""></a></div>
+            <div class="pic men"><a href="men9.jpg" data-lightbox="fashion" data-title=""><img src="men9.jpg" alt=""></a></div>
+            <div class="pic men"><a href="men10.jpg" data-lightbox="fashion" data-title=""><img src="men10.jpg" alt=""></a></div>
+            <div class="pic men"><a href="men11.jpg" data-lightbox="fashion" data-title=""><img src="men11.jpg" alt=""></a></div>
+            <div class="pic men"><a href="men12.jpg" data-lightbox="fashion" data-title=""><img src="men12.jpg" alt=""></a></div>
+            <div class="pic men"><a href="men13.jpg" data-lightbox="fashion" data-title=""><img src="men13.jpg" alt=""></a></div>
+            <div class="pic men"><a href="men14.jpg" data-lightbox="fashion" data-title=""><img src="men14.jpg" alt=""></a></div>
+            <div class="pic men"><a href="men15.jpg" data-lightbox="fashion" data-title=""><img src="men15.jpg" alt=""></a></div>
+            <div class="pic men"><a href="men16.jpg" data-lightbox="fashion" data-title=""><img src="men16.jpg" alt=""></a></div>
+            <div class="pic men"><a href="men17.jpg" data-lightbox="fashion" data-title=""><img src="men17.jpg" alt=""></a></div>
+            
+            <div class="pic women"><a href="women1.jpg" data-lightbox="fashion" data-title=""><img src="women1.jpg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes2.jpg" data-lightbox="fashion" data-title=""><img src="shoes2.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women2.jpg" data-lightbox="fashion" data-title=""><img src="women2.jpg" alt=""></a></div>
+            <div class="pic watch"><a href="watch3.jpg" data-lightbox="fashion" data-title=""><img src="watch3.jpg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes3.jpeg" data-lightbox="fashion" data-title=""><img src="shoes3.jpeg" alt=""></a></div>
+            <div class="pic women"><a href="women3.jpg" data-lightbox="fashion" data-title=""><img src="women3.jpg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes4.jpg" data-lightbox="fashion" data-title=""><img src="shoes4.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women4.jpg" data-lightbox="fashion" data-title=""><img src="women4.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women5.jpeg" data-lightbox="fashion" data-title=""><img src="women5.jpeg" alt=""></a></div>
+            <div class="pic women"><a href="women6.jpeg" data-lightbox="fashion" data-title=""><img src="women6.jpeg" alt=""></a></div>
+            <div class="pic women"><a href="women7.jpeg" data-lightbox="fashion" data-title=""><img src="women7.jpeg" alt=""></a></div>
+            <div class="pic women"><a href="women8.jpg" data-lightbox="fashion" data-title=""><img src="women8.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women9.jpg" data-lightbox="fashion" data-title=""><img src="women9.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women10.jpg" data-lightbox="fashion" data-title=""><img src="women10.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women11.jpg" data-lightbox="fashion" data-title=""><img src="women11.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women12.jpg" data-lightbox="fashion" data-title=""><img src="women12.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women13.jpg" data-lightbox="fashion" data-title=""><img src="women13.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women14.jpg" data-lightbox="fashion" data-title=""><img src="women14.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women15.jpeg" data-lightbox="fashion" data-title=""><img src="women15.jpeg" alt=""></a></div>
+            <div class="pic women"><a href="women16.jpeg" data-lightbox="fashion" data-title=""><img src="women16.jpeg" alt=""></a></div>
+            <div class="pic women"><a href="women17.jpg" data-lightbox="fashion" data-title=""><img src="women17.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women18.jpg" data-lightbox="fashion" data-title=""><img src="women18.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women19.jpg" data-lightbox="fashion" data-title=""><img src="women19.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women20.jpeg" data-lightbox="fashion" data-title=""><img src="women20.jpeg" alt=""></a></div>
+            <div class="pic women"><a href="women21.jpg" data-lightbox="fashion" data-title=""><img src="women21.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women22.jpg" data-lightbox="fashion" data-title=""><img src="women22.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women23.jpg" data-lightbox="fashion" data-title=""><img src="women23.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women24.jpg" data-lightbox="fashion" data-title=""><img src="women24.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women25.jpeg" data-lightbox="fashion" data-title=""><img src="women25.jpeg" alt=""></a></div>
+            <div class="pic women"><a href="women26.jpg" data-lightbox="fashion" data-title=""><img src="women26.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women27.jpeg" data-lightbox="fashion" data-title=""><img src="women27.jpeg" alt=""></a></div>
+            <div class="pic women"><a href="women28.jpg" data-lightbox="fashion" data-title=""><img src="women28.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women29.jpeg" data-lightbox="fashion" data-title=""><img src="women29.jpeg" alt=""></a></div>
+            <div class="pic women"><a href="women30.jpg" data-lightbox="fashion" data-title=""><img src="women30.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women31.jpg" data-lightbox="fashion" data-title=""><img src="women31.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women32.jpg" data-lightbox="fashion" data-title=""><img src="women32.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women33.jpg" data-lightbox="fashion" data-title=""><img src="women33.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women34.jpg" data-lightbox="fashion" data-title=""><img src="women34.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women35.jpg" data-lightbox="fashion" data-title=""><img src="women35.jpg" alt=""></a></div>
+            <div class="pic women"><a href="women36.jpg" data-lightbox="fashion" data-title=""><img src="women36.jpg" alt=""></a></div>
+            <div class="pic watch"><a href="watch2.jpg" data-lightbox="fashion" data-title=""><img src="watch2.jpg" alt=""></a></div>
+            <div class="pic watch"><a href="watch5.jpg" data-lightbox="fashion" data-title=""><img src="watch5.jpg" alt=""></a></div>
+            <div class="pic watch"><a href="watch6.jpg" data-lightbox="fashion" data-title=""><img src="watch6.jpg" alt=""></a></div>
+            <div class="pic watch"><a href="watch7.jpg" data-lightbox="fashion" data-title=""><img src="watch7.jpg" alt=""></a></div>
+            <div class="pic watch"><a href="watch8.jpg" data-lightbox="fashion" data-title=""><img src="watch8.jpg" alt=""></a></div>
+            <div class="pic watch"><a href="watch4.jpg" data-lightbox="fashion" data-title=""><img src="watch4.jpg" alt=""></a></div>
+            <div class="pic watch"><a href="watch9.jpg" data-lightbox="fashion" data-title=""><img src="watch9.jpg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes5.jpeg" data-lightbox="fashion" data-title=""><img src="shoes5.jpeg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes6.jpg" data-lightbox="fashion" data-title=""><img src="shoes6.jpg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes7.jpg" data-lightbox="fashion" data-title=""><img src="shoes7.jpg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes8.jpg" data-lightbox="fashion" data-title=""><img src="shoes8.jpg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes9.jpeg" data-lightbox="fashion" data-title=""><img src="shoes9.jpeg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes10.jpeg" data-lightbox="fashion" data-title=""><img src="shoes10.jpeg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes11.jpg" data-lightbox="fashion" data-title=""><img src="shoes11.jpg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes12.jpg" data-lightbox="fashion" data-title=""><img src="shoes12.jpg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes13.jpg" data-lightbox="fashion" data-title=""><img src="shoes13.jpg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes14.jpeg" data-lightbox="fashion" data-title=""><img src="shoes14.jpeg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes15.jpeg" data-lightbox="fashion" data-title=""><img src="shoes15.jpeg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes16.jpeg" data-lightbox="fashion" data-title=""><img src="shoes16.jpeg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes17.jpeg" data-lightbox="fashion" data-title=""><img src="shoes17.jpeg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes18.jpeg" data-lightbox="fashion" data-title=""><img src="shoes18.jpeg" alt=""></a></div>
+            <div class="pic shoes"><a href="shoes19.jpg" data-lightbox="fashion" data-title=""><img src="shoes19.jpg" alt=""></a></div>
+            
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="lightbox-plus-jquery.js"></script>
+<script>
+    var menulist = document.getElementById('menulist');
+
+function openMenu() {
+    menulist.style.top = '0px'
+}
+function closeMenu() {
+    menulist.style.top = '-1000px'
+}
+
+
+
+let find = document.getElementById('search');
+
+find.style.opacity = '0'
+ function seeFunc(){
+    if(find.style.opacity == '0') {
+        find.style.opacity = '1'
+    }
+    else{
+        find.style.opacity = '0';
+    }
+ }
+let title = document.querySelectorAll('.title');
+function activeLabel() {
+    title.forEach((element) => {
+        element.classList.remove('active');
+        this.classList.add('active');
+    });
+}
+title.forEach((element) =>
+    element.addEventListener('click', activeLabel)
+);
+</script>
+
+</body>
+</html>
