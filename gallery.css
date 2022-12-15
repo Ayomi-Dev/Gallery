@@ -68,10 +68,14 @@
 }
 .nav2-icons{
     display: flex;
+    align-items: center;
+}
+.nav2-icons .fa-search{
+    padding-right: 3px;
 }
 .nav2-icons a .fa{
     display: flex;
-    padding: 0 5px;
+    padding: 0 8px;
     font-weight: bold;
     transition: 0.5s;
     color: #141414;
@@ -89,7 +93,7 @@
 .nav2-icons p{
     padding-left: 5px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
     #logo{
         font-size: 1rem;
     }
@@ -110,7 +114,7 @@
         z-index: 2;
         position: absolute;
         left: 0;
-        transition: all 1s ease-out;
+        transition: all .5s ease-out;
         top: -1000px;
     }
     .nav2 ul li a{
@@ -200,6 +204,9 @@ section h2{
     font-weight: bolder;
     animation: blink 2s infinite ease ;
 }
+section h3{
+    margin: 10px;
+}
 @keyframes blink {
     0%{
         background-color: #141414;
@@ -216,18 +223,18 @@ section h2{
     display: flex;
     align-items: center;
     background: rgb(238, 235, 235);
-    width: 80%;
+    width: 90%;
     height: 60px;
     margin: 20px auto;
     justify-content: center;
     border-radius: 10px;
+    border: 2px solid red;
 }
 .gallery h3{
     background: lightgray;
-    padding: 0 50px;
+    padding: 0 15px;
     line-height: 60px;
     position: relative;
-    margin: 30px 0;
     height: 100%;
     font-size: 1.5rem;
     border-radius: 10px;
@@ -238,35 +245,36 @@ section h2{
     content: '';
     width: 100% ;
     height: 100%;
-
 }
 
-label{
+.title{
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding: 0 40px;
+    /* padding: 0 20px; */
     cursor: pointer;
     font-weight: bolder;
     font-size: 1rem;
     transition: all 0.5s;
 }
 
-label:hover{
+.title:hover{
     color: #dc143c;
 }
-label.active{
+.title.active{
     color: #dc143c;
 }
 .gallery-images{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 90%;
-    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    place-items: center;
     grid-gap: 20px;
+    border: 2px solid red;
 }
 .gallery-images .pic{
-    height: 230px;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
@@ -357,16 +365,27 @@ label.active{
     transform: scale(0);
     position: absolute;
 }
-@media screen and (max-width: 1020px) {
-    label{
-        padding: 0 10px;
+@media screen and (max-width: 768px) {
+    .title{
+        margin: 0 8px;
         font-size: 13px;
     }
     .gallery h3{
-        padding: 0 10px;
+        padding: 0 6px;
         font-size: 13px;
     }
     .gallery{
+        width: 100%;
+    }
+    .gallery-images{
+        grid-template-columns: repeat(2, 1fr) ;
+    }
+    .gallery-images .pic{
+        width: 150px;
+        height: 150px;
+    }
+    .gallery-images .pic img{
+        height: 100%;
         width: 100%;
     }
     .pic::before{
